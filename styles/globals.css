@@ -49,3 +49,7 @@
     @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
   }
 }
+
+.miguelito {
+  mask-image: linear-gradient(black 85%, transparent);
+}
