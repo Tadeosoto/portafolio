@@ -20,10 +20,10 @@ import {
 //  data
 const aboutData = [
   {
-    title: "skills",
+    title: "Habilidades",
     info: [
       {
-        title: "Web Development",
+        title: "Desarrollo Web",
         icons: [
           <FaHtml5 />,
           <FaCss3 />,
@@ -31,13 +31,12 @@ const aboutData = [
           <FaReact />,
           <SiNextdotjs />,
           <SiFramer />,
-          <FaWordpress />,
         ],
       },
-      {
-        title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
-      },
+      // {
+      //   title: "UI/UX Design",
+      //   icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+      // },
     ],
   },
   {
@@ -54,7 +53,7 @@ const aboutData = [
     ],
   },
   {
-    title: "experience",
+    title: "experiencia",
     info: [
       {
         title: "UX/UI Designer - XYZ Company",
@@ -71,7 +70,7 @@ const aboutData = [
     ],
   },
   {
-    title: "credentials",
+    title: "credenciales",
     info: [
       {
         title: "Web Development - ABC University, LA, CA",
@@ -111,13 +110,43 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[370px]"
+        className="hidden xl:flex absolute bottom-0 -left-[370px] miguelito"
       >
         <Avatar />
       </motion.div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-        <div>text</div>
-        <div>
+        {/* texto */}
+        <div className="flex-1 flex flex-col justify-center">
+          <motion.h2
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="h2"
+          >
+            La chucha de la <span className="text-blue-600">wea</span> esta para
+            romperte la cabeza de monda.
+          </motion.h2>
+          <motion.p
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+          >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
+            aperiam rerum voluptatum aspernatur distinctio hic commodi,
+            repellendus architecto exercitationem dicta.
+          </motion.p>
+        </div>
+        {/* info */}
+        <motion.div
+          variants={fadeIn("left", 0.4)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+        >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
               return (
@@ -134,7 +163,28 @@ const About = () => {
               );
             })}
           </div>
-        </div>
+          <div className=" py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+            {aboutData[index].info.map((item, itemIndex) => {
+              return (
+                <div
+                  key={itemIndex}
+                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
+                >
+                  {/* titulo */}
+                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                  <div className="hidden md:flex">-</div>
+                  <div>{item.stage}</div>
+                  {/* icons */}
+                  <div className="flex gap-x-4">
+                    {item.icons?.map((icon, itemIndex) => {
+                      return <div className="text-2xl text-white">{icon}</div>;
+                    })}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </motion.div>
       </div>
     </div>
   );
@@ -142,4 +192,4 @@ const About = () => {
 
 export default About;
 
-// NOS QUEDAMOS EN EL SEGUNDO 1:21:50 DEL VIDEO
+// NOS QUEDAMOS EN EL SEGUNDO 1:23:30 DEL VIDEO
