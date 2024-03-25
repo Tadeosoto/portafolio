@@ -38,20 +38,7 @@ const aboutData = [
   // },
   {
     title: "experiencia",
-    info: [
-      // {
-      //   title: "UX/UI Designer - XYZ Company",
-      //   stage: "2012 - 2023",
-      // },
-      // {
-      //   title: "Web Developer - ABC Agency",
-      //   stage: "2010 - 2012",
-      // },
-      // {
-      //   title: "Intern - DEF Corporation",
-      //   stage: "2008 - 2010",
-      // },
-    ],
+    info: [],
   },
   {
     title: "credenciales",
@@ -139,7 +126,7 @@ const About = () => {
                   key={itemIndex}
                   className={`${
                     index === itemIndex &&
-                    "text-blue-600 after:w-[100%] after:bg-blue-600 after:transition-all after:duration-300"
+                    "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
                   } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                   onClick={() => setIndex(itemIndex)}
                 >
