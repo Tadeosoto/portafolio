@@ -23,50 +23,51 @@ const aboutData = [
       },
     ],
   },
-  {
-    title: "awards",
-    info: [
-      {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
-      },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
-      },
-    ],
-  },
+  // {
+  //   title: "awards",
+  //   info: [
+  //     {
+  //       title: "Webby Awards - Honoree",
+  //       stage: "2011 - 2012",
+  //     },
+  //     {
+  //       title: "Adobe Design Achievement Awards - Finalist",
+  //       stage: "2009 - 2010",
+  //     },
+  //   ],
+  // },
   {
     title: "experiencia",
     info: [
-      {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
-      },
-      {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
-      },
-      {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
-      },
+      // {
+      //   title: "UX/UI Designer - XYZ Company",
+      //   stage: "2012 - 2023",
+      // },
+      // {
+      //   title: "Web Developer - ABC Agency",
+      //   stage: "2010 - 2012",
+      // },
+      // {
+      //   title: "Intern - DEF Corporation",
+      //   stage: "2008 - 2010",
+      // },
     ],
   },
   {
     title: "credenciales",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
+        title:
+          " The Complete JavaScript Course 2023: From Zero to Expert! - Udemy",
+        stage: "2023",
       },
       {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
+        title: "Build Responsive Real-World Websites with HTML and CSS - Udemy",
+        stage: "2023",
       },
       {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "Python for beginners - Learn all the basics of python - Udemy",
+        stage: "2023",
       },
     ],
   },
