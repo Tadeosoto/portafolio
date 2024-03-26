@@ -73,16 +73,19 @@ const WorkSlider = () => {
       modules={[Pagination]}
       className="h-[280px] sm:h-[480px]"
     >
-      {workSlides.slides.map((slide, index) => {
+      {workSlides.slides.map((slide, slideIndex) => {
         return (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={`slide-${slideIndex}`}>
             <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
-              {slide.images.map((image, index) => {
+              {slide.images.map((image, imageIndex) => {
                 return (
-                  <div className="relative rounded-lg overflow-hidden flex items-center justify-center group">
+                  <div
+                    key={`image-${slideIndex}-${imageIndex}`}
+                    className="relative rounded-lg overflow-hidden flex items-center justify-center group"
+                  >
                     <div
                       className="flex items-center justify-center relative overflow-hidden group"
-                      key={index}
+                      // key={index}
                     >
                       {/* image */}
                       <Image src={image.path} width={500} height={300} alt="" />
@@ -99,7 +102,7 @@ const WorkSlider = () => {
                           </div>
                           {/* icono */}
                           <div className="text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200">
-                            <BsArrowRight key={1} />
+                            <BsArrowRight />
                           </div>
                         </div>
                       </div>
