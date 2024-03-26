@@ -26,24 +26,20 @@ import { FreeMode, Pagination } from "swiper";
 const serviceData = [
   {
     icon: <RxCrop />,
-    title: "Branding",
+    title: "Gestion de marca",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     icon: <RxPencil2 />,
-    title: "Design",
+    title: "Diseño",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     icon: <RxDesktop />,
-    title: "Development",
+    title: "Desarrollo",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
-  {
-    icon: <RxReader />,
-    title: "Copywriting",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
+
   {
     icon: <RxRocket />,
     title: "SEO",
@@ -96,3 +92,5 @@ const ServiceSlider = () => {
 };
 
 export default ServiceSlider;
+
+// segundo 1:59:03 del VIDEO
