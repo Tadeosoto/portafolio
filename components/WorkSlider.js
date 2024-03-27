@@ -71,7 +71,7 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[Pagination]}
-      className="h-[280px] sm:h-[480px]"
+      className="h-[280px] sm:h-[600px]"
     >
       {workSlides.slides.map((slide, slideIndex) => {
         return (
@@ -80,8 +80,8 @@ const WorkSlider = () => {
               {slide.images.map((image, imageIndex) => {
                 return (
                   <div
-                    key={`image-${slideIndex}-${imageIndex}`}
                     className="relative rounded-lg overflow-hidden flex items-center justify-center group"
+                    key={`image-${slideIndex}-${imageIndex}`}
                   >
                     <div
                       className="flex items-center justify-center relative overflow-hidden group"
