@@ -6,6 +6,7 @@ import {
   RiFacebookLine,
   RiYoutubeLine,
   RiTiktokLine,
+  RiWhatsappFill,
 } from "react-icons/ri";
 
 const Socials = () => {
@@ -34,6 +35,12 @@ const Socials = () => {
         className="hover:text-blue-500 transition-all duration-300"
       >
         <RiTiktokLine />
+      </Link>
+      <Link
+        href={""}
+        className="hover:text-blue-500 transition-all duration-300"
+      >
+        <RiWhatsappFill />
       </Link>
     </div>
   );
