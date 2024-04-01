@@ -22,7 +22,7 @@ const Work = () => {
               exit="hidden"
               className="h2 xl:mt-12"
             >
-              Mis trabajos<span className="text-accent">.</span>
+              Mis proyectos<span className="text-accent">.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -31,8 +31,8 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, sit
-              natus. Eum iusto et numquam nihil quod? tempora porro.
+              He creado y optimizado páginas web, ofreciendo soluciones
+              personalizadas que potencian la presencia digital.
             </motion.p>
           </div>
           {/*slider  */}

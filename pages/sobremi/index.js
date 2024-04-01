@@ -96,8 +96,8 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            La chucha de la <span className="text-blue-600">wea</span> esta para
-            romperte la cabeza de monda.
+            Descubre mi mundo
+            <span className="text-blue-600">digital:</span>
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -106,9 +106,7 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
-            aperiam rerum voluptatum aspernatur distinctio hic commodi,
-            repellendus architecto exercitationem dicta.
+            Habilidades, experiencia y formación detrás de cada proyecto.
           </motion.p>
         </div>
         {/* info */}

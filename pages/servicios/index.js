@@ -35,8 +35,8 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, sit
-              natus. Eum iusto et numquam nihil quod? tempora porro.
+              Ofrezco soluciones completas para potenciar tu presencia en línea
+              y mejorar la visibilidad de tu marca en internet.
             </motion.p>
           </div>
           {/*slider  */}

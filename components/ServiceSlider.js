@@ -27,23 +27,26 @@ const serviceData = [
   {
     icon: <RxCrop />,
     title: "Gestion de marca",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Optimizo y fortalezco la identidad y percepción de tu marca.",
   },
   {
     icon: <RxPencil2 />,
     title: "Diseño",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:
+      "sitios web impactantes y funcionales para tus necesidades digitales.",
   },
   {
     icon: <RxDesktop />,
     title: "Desarrollo",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:
+      "Desarrollando soluciones web personalizadas y eficientes para tu negocio.",
   },
 
   {
     icon: <RxRocket />,
     title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:
+      "Mejorando la visibilidad y el posicionamiento orgánico de tu sitio web.",
   },
 ];
 
