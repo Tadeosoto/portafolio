@@ -16,7 +16,7 @@ const ProjectsBtn = () => {
       <Link href={"/work"} legacyBehavior>
         <a
           className="relative w-[185px] h-[185px] flex justify-center items-center bg-circleStar bg-cover bg-no-repeat group"
-          style={{ zIndex: 50 }}
+          style={{ zIndex: 9 }}
         >
           <Image
             src={"/rounded-text2.png"}
