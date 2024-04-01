@@ -27,8 +27,8 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Transformando ideas <br /> a la{" "}
-            <span className="text-blue-600"> realidad digital</span>
+            Diseño web <br /> que hace
+            <span className="text-blue-600"> click.</span>
           </motion.h1>
           {/*  sub-titulo */}
           <motion.p
@@ -38,9 +38,10 @@ const Home = () => {
             animate="show"
             exit="hidden"
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Praesentium aperiam eos magnam eum minima, autem culpa mollitia
-            dolorem id sequi?
+            En cada proyecto, me comprometo a fusionar diseño intuitivo con
+            funcionalidad impecable, creando soluciones web que no solo capturan
+            la atención, sino que también impulsan resultados. Confía en mí para
+            llevar tu idea al siguiente nivel digital.
           </motion.p>
           {/* boton */}
           <div className="flex justify-center xl:hidden relative">
