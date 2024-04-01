@@ -79,7 +79,7 @@ const Contact = () => {
                 name="user_email"
               ></input>
             </div>
-            <input type="text" placeholder="tema" className="input"></input>
+
             <textarea
               name="message"
               placeholder="mensaje"
