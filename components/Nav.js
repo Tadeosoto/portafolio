@@ -20,7 +20,7 @@ export const navData = [
   // },
   {
     name: "contacto",
-    path: "/contact",
+    path: "/contacto",
     icon: <HiEnvelope />,
   },
 ];

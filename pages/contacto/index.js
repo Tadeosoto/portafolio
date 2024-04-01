@@ -14,7 +14,31 @@ import { motion } from "framer-motion";
 
 import { fadeIn } from "../../variants";
 
+// correo
+
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_j9nneo8", "template_p6qje0v", form.current, {
+        publicKey: "TaoEEM9WLkWCObiPU",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <div className="h-full bg-primary/30">
       <div className="container mx-auto py-32 text-center xl-text-left flex items-center justify-center h-full">
@@ -32,6 +56,8 @@ const Contact = () => {
           </motion.h2>
           {/* form */}
           <motion.form
+            ref={form}
+            onSubmit={sendEmail}
             variants={fadeIn("up", 0.4)}
             initial="hidden"
             animate="show"
@@ -40,12 +66,30 @@ const Contact = () => {
           >
             {/*grupo de input  */}
             <div className="flex gap-x-6 w-full">
-              <input type="text" placeholder="nombre" className="input"></input>
-              <input type="text" placeholder="correo" className="input"></input>
+              <input
+                type="text"
+                placeholder="nombre"
+                className="input"
+                name="user_name"
+              ></input>
+              <input
+                type="email"
+                placeholder="correo"
+                className="input"
+                name="user_email"
+              ></input>
             </div>
             <input type="text" placeholder="tema" className="input"></input>
-            <textarea placeholder="mensaje" className="textarea"></textarea>
-            <button className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
+            <textarea
+              name="message"
+              placeholder="mensaje"
+              className="textarea"
+            ></textarea>
+            <button
+              type="submit"
+              value="send"
+              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+            >
               <span className="group-hover:-translate-y-[120%] group-hover-opacity-0 transition-all duration-500">
                 Hablemos
               </span>
