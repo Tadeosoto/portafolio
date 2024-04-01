@@ -40,7 +40,7 @@ const Socials = () => {
         href={""}
         className="hover:text-blue-500 transition-all duration-300"
       >
-        <RiWhatsappFill />
+        <RiWhatsappFill color="green" />
       </Link>
     </div>
   );

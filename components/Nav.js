@@ -10,8 +10,8 @@ import {
 // nav data
 export const navData = [
   { name: "inicio", path: "/", icon: <HiHome /> },
-  { name: "acerca", path: "/about", icon: <HiUser /> },
-  { name: "servicios", path: "/services", icon: <HiRectangleGroup /> },
+  { name: "acerca", path: "/sobremi", icon: <HiUser /> },
+  { name: "servicios", path: "/servicios", icon: <HiRectangleGroup /> },
   { name: "trabajos", path: "/work", icon: <HiViewColumns /> },
   // {
   //   name: "testimonios",
