@@ -27,7 +27,8 @@ const serviceData = [
   {
     icon: <RxCrop />,
     title: "Gestion de marca",
-    description: "Optimizo y fortalezco la identidad y percepción de tu marca.",
+    description:
+      "Optimizando y fortaleciendo la identidad y percepción de tu marca.",
   },
   {
     icon: <RxPencil2 />,
