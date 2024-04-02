@@ -40,8 +40,8 @@ const Home = () => {
           >
             En cada proyecto, buscamos fusionar diseño intuitivo con
             funcionalidad impecable, creando soluciones web que no solo capturan
-            la atención, sino que también impulsan resultados. Confía en mí para
-            llevar tu idea al siguiente nivel digital.
+            la atención, sino que también impulsan resultados. Confía en
+            nosotros para llevar tu idea al siguiente nivel digital.
           </motion.p>
           {/* boton */}
           <div className="flex justify-center xl:hidden relative">
