@@ -56,6 +56,11 @@ const aboutData = [
         title: "Python for beginners - Learn all the basics of python - Udemy",
         stage: "2023",
       },
+      {
+        title:
+          "React - The Complete Guide 2024 (incl. React Router & Redux) - Udemy",
+        stage: "2024",
+      },
     ],
   },
 ];
@@ -96,8 +101,9 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            Descubre mi mundo
-            <span className="text-blue-600">digital:</span>
+            Utilizando diversas{" "}
+            <span className="text-blue-600"> herramientas</span> para tus ideas
+            <span className="text-blue-600"> digitales</span>
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}

@@ -13,7 +13,7 @@ import { HiArrowRight } from "react-icons/hi2";
 const ProjectsBtn = () => {
   return (
     <div className="mx-auto xl:mx-0">
-      <Link href={"/work"} legacyBehavior>
+      <Link href={"/proyectos"} legacyBehavior>
         <a
           className="relative w-[185px] h-[185px] flex justify-center items-center bg-circleStar bg-cover bg-no-repeat group"
           style={{ zIndex: 9 }}

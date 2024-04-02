@@ -24,12 +24,12 @@ const Socials = () => {
       >
         <RiFacebookLine />
       </Link>
-      <Link
+      {/* <Link
         href={""}
         className="hover:text-blue-500 transition-all duration-300"
       >
         <RiYoutubeLine />
-      </Link>
+      </Link> */}
       <Link
         href={""}
         className="hover:text-blue-500 transition-all duration-300"
