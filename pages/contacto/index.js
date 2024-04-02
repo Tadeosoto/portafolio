@@ -52,7 +52,7 @@ const Contact = () => {
             exit="hidden"
             className="h2 text-center mb-12"
           >
-            trabajemos <span className="text-accent">juntos!</span>
+            ¡Trabajemos <span className="text-accent">juntos!</span>
           </motion.h2>
           {/* form */}
           <motion.form
