@@ -38,7 +38,7 @@ const Home = () => {
             animate="show"
             exit="hidden"
           >
-            En cada proyecto, me comprometo a fusionar diseño intuitivo con
+            En cada proyecto, buscamos fusionar diseño intuitivo con
             funcionalidad impecable, creando soluciones web que no solo capturan
             la atención, sino que también impulsan resultados. Confía en mí para
             llevar tu idea al siguiente nivel digital.
