@@ -36,10 +36,10 @@ const aboutData = [
   //     },
   //   ],
   // },
-  {
-    title: "experiencia",
-    info: [],
-  },
+  // {
+  //   title: "experiencia",
+  //   info: [],
+  // },
   {
     title: "credenciales",
     info: [
@@ -124,7 +124,7 @@ const About = () => {
                   key={itemIndex}
                   className={`${
                     index === itemIndex &&
-                    "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
+                    "text-accent after:w-[100%] after:bg-blue-600 after:transition-all after:duration-300"
                   } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                   onClick={() => setIndex(itemIndex)}
                 >
