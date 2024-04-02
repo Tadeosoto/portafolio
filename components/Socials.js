@@ -37,7 +37,7 @@ const Socials = () => {
         <RiTiktokLine />
       </Link>
       <Link
-        href={""}
+        href={"https://wa.me/523312393317"}
         className="hover:text-blue-500 transition-all duration-300"
       >
         <RiWhatsappFill color="green" />
