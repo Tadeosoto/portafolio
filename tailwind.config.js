@@ -37,6 +37,15 @@ module.exports = {
       fontFamily: {
         poppins: [`var(--font-poppins)`, "sans-serif"],
         sora: [`var(--font-sora)`, "sans-serif"],
+        /** Evita que la fuente del sitio convierta 🇺🇸/🇲🇽 en letras “US”/“MX”. */
+        emoji: [
+          '"Segoe UI Emoji"',
+          '"Apple Color Emoji"',
+          '"Noto Color Emoji"',
+          '"Twemoji Mozilla"',
+          "emoji",
+          "sans-serif",
+        ],
       },
     },
   },

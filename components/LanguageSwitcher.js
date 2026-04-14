@@ -1,11 +1,26 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 
 const LOCALES = [
-  { code: "en", label: "EN-US", flag: "🇺🇸" },
-  { code: "es", label: "ES-MX", flag: "🇲🇽" },
+  { code: "en", label: "EN-US", flagSrc: "/flags/us.svg" },
+  { code: "es", label: "ES-MX", flagSrc: "/flags/mx.svg" },
 ];
+
+function LocaleFlag({ src }) {
+  return (
+    <Image
+      src={src}
+      alt=""
+      width={22}
+      height={16}
+      className="h-4 w-[1.65rem] shrink-0 rounded-sm object-cover shadow-sm"
+      unoptimized
+      aria-hidden
+    />
+  );
+}
 
 const LanguageSwitcher = () => {
   const { t } = useTranslation("common");
@@ -52,9 +67,7 @@ const LanguageSwitcher = () => {
         aria-controls="language-switcher-menu"
         aria-label={t("locale.switchLanguage")}
       >
-        <span className="text-lg leading-none" aria-hidden>
-          {active.flag}
-        </span>
+        <LocaleFlag src={active.flagSrc} />
         <span className="font-medium tracking-wide">{active.label}</span>
         <span className="text-white/50" aria-hidden>
           {open ? "▴" : "▾"}
@@ -79,9 +92,7 @@ const LanguageSwitcher = () => {
                   switchLocale(l.code);
                 }}
               >
-                <span className="text-lg" aria-hidden>
-                  {l.flag}
-                </span>
+                <LocaleFlag src={l.flagSrc} />
                 <span className="font-medium">{l.label}</span>
               </button>
             </li>
