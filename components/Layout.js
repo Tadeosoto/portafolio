@@ -21,7 +21,8 @@ const Layout = ({ children }) => {
       <TopLeftImg />
       <Nav />
       <Header />
-      {children}
+      {/* Espacio a la derecha en desktop para que el nav fijo no tape el contenido */}
+      <div className="h-full min-h-0 xl:pr-24 2xl:pr-32">{children}</div>
     </div>
   );
 };

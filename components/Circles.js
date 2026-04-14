@@ -11,6 +11,7 @@ const Circles = () => {
         height={200}
         className="w-full h-full"
         alt=""
+        sizes="(max-width: 1280px) 200px, 300px"
       />
     </div>
   );

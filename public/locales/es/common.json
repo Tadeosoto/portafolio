@@ -1,0 +1,59 @@
+{
+  "header": {
+    "logoAlt": "Tadeo Soto — inicio"
+  },
+  "avatarAlt": "Retrato del desarrollador",
+  "locale": {
+    "switchLanguage": "Idioma",
+    "en": "EN-US",
+    "es": "ES-MX"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca",
+    "services": "Servicios",
+    "work": "Trabajos",
+    "contact": "Contacto"
+  },
+  "home": {
+    "title1": "Diseño web",
+    "title2": "que hace",
+    "titleAccent": "click.",
+    "subtitle": "En cada proyecto, buscamos fusionar diseño intuitivo con funcionalidad impecable, creando soluciones web que no solo capturan la atención, sino que también impulsan resultados. Confía en nosotros para llevar tu idea al siguiente nivel digital.",
+    "projectsBtnAria": "Ver mis proyectos"
+  },
+  "servicesPage": {
+    "title": "Mis servicios",
+    "subtitle": "Ofrezco soluciones completas para potenciar tu presencia en línea y mejorar la visibilidad de tu marca en internet."
+  },
+  "projectsPage": {
+    "title": "Mis proyectos",
+    "subtitle": "He creado y optimizado páginas web, ofreciendo soluciones personalizadas que potencian la presencia digital."
+  },
+  "workSlider": {
+    "see": "VER",
+    "project": "PROYECTO",
+    "openProject": "Abrir proyecto: {{title}}"
+  },
+  "contact": {
+    "title": "¡Trabajemos",
+    "titleAccent": "juntos!",
+    "name": "nombre",
+    "email": "correo",
+    "message": "mensaje",
+    "submit": "Hablemos"
+  },
+  "about": {
+    "tabs": {
+      "skills": "Habilidades",
+      "credentials": "Credenciales"
+    },
+    "hero": {
+      "line1": "Utilizando diversas",
+      "accent1": " herramientas",
+      "line2": " para tus ideas",
+      "accent2": " digitales",
+      "line3": ""
+    }
+  }
+}

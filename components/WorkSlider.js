@@ -1,259 +1,123 @@
-// // data
-// const workSlides = {
-//   slides: [
-//     {
-//       images: [
-//         {
-//           title: "title",
-//           path: "/thumb1.jpg",
-//         },
-//         {
-//           title: "title",
-//           path: "/thumb2.jpg",
-//         },
-//         {
-//           title: "title",
-//           path: "/thumb3.jpg",
-//         },
-//         {
-//           title: "title",
-//           path: "/thumb4.jpg",
-//         },
-//       ],
-//     },
-//     {
-//       images: [
-//         {
-//           title: "title",
-//           path: "/thumb4.jpg",
-//         },
-//         {
-//           title: "title",
-//           path: "/thumb1.jpg",
-//         },
-//         {
-//           title: "title",
-//           path: "/thumb2.jpg",
-//         },
-//         {
-//           title: "title",
-//           path: "/thumb3.jpg",
-//         },
-//       ],
-//     },
-//   ],
-// };
-
-// // import swiper react components
-
-// import { Swiper, SwiperSlide } from "swiper/react";
-
-// //swiper stykes
-
-// import "swiper/css";
-// import "swiper/css/free-mode";
-// import "swiper/css/pagination";
-
-// //modulos requeriros
-
-// import { Pagination } from "swiper";
-
-// // icons
-// import { BsArrowRight } from "react-icons/bs";
-// // next Image
-// import Image from "next/image";
-
-// const WorkSlider = () => {
-//   return (
-//     <Swiper
-//       spaceBetween={10}
-//       pagination={{
-//         clickable: true,
-//       }}
-//       modules={[Pagination]}
-//       className="h-[280px] sm:h-[600px]"
-//     >
-//       {workSlides.slides.map((slide, slideIndex) => {
-//         return (
-//           <SwiperSlide key={`slide-${slideIndex}`}>
-//             <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
-//               {slide.images.map((image, imageIndex) => {
-//                 return (
-//                   <div
-//                     className="relative rounded-lg overflow-hidden flex items-center justify-center group"
-//                     key={`image-${slideIndex}-${imageIndex}`}
-//                   >
-//                     <div
-//                       className="flex items-center justify-center relative overflow-hidden group"
-//                       // key={index}
-//                     >
-//                       {/* image */}
-//                       <Image src={image.path} width={500} height={300} alt="" />
-//                       {/* gradient overlay */}
-//                       <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#2563eb] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
-//                       {/*  title*/}
-//                       <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
-//                         <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
-//                           {/* parte 1 */}
-//                           <div className="delay-100">VER</div>
-//                           {/* parte 2 */}
-//                           <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
-//                             PROYECTO
-//                           </div>
-//                           {/* icono */}
-//                           <div className="text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200">
-//                             <BsArrowRight />
-//                           </div>
-//                         </div>
-//                       </div>
-//                     </div>
-//                   </div>
-//                 );
-//               })}
-//             </div>
-//           </SwiperSlide>
-//         );
-//       })}
-//     </Swiper>
-//   );
-// };
-
-// export default WorkSlider;
-
-// import swiper react components
-
 import { Swiper, SwiperSlide } from "swiper/react";
-
-//swiper stykes
-
 import "swiper/css";
-import "swiper/css/free-mode";
 import "swiper/css/pagination";
-
-//modulos requeriros
-
-import { Pagination } from "swiper";
-
-// icons
+import { Autoplay, Pagination } from "swiper";
 import { BsArrowRight } from "react-icons/bs";
-// next Image
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
+import { useMemo } from "react";
 
-// data
-const workSlides = {
-  slides: [
-    {
-      images: [
-        {
-          title: "title",
-          path: "/thumb1.jpg",
-          link: "https://www.ccp.com.mx/",
-        },
-        {
-          title: "title",
-          path: "/thumb2.jpg",
-          link: "https://omnifood-tadeosoto.netlify.app/",
-        },
-        {
-          title: "title",
-          path: "/thumb3.jpg",
-          link: "https://bankist-tadeo.netlify.app/",
-        },
-        {
-          title: "title",
-          path: "/thumb4.jpg",
-          // link: "https://example4.com",
-        },
-      ],
-    },
-    {
-      images: [
-        {
-          title: "title",
-          path: "/thumb4.jpg",
-          // link: "https://example4.com",
-        },
-        {
-          title: "title",
-          path: "/thumb1.jpg",
-          link: "https://www.ccp.com.mx/",
-        },
-        {
-          title: "title",
-          path: "/thumb2.jpg",
-          link: "https://omnifood-tadeosoto.netlify.app/",
-        },
-        {
-          title: "title",
-          path: "/thumb3.jpg",
-          link: "https://bankist-tadeo.netlify.app/",
-        },
-      ],
-    },
-  ],
-};
+const PROJECT_ASSETS = [
+  { path: "/thumb1.jpg", link: "https://www.ccp.com.mx/" },
+  { path: "/vero-pagina.png", link: "https://my-landing.tadeosoto1993.workers.dev/" },
+  { path: "/fsf-pagina.png", link: "https://segurodevidagnp-fsf.com/" },
+  { path: "/caenna-pagina.png", link: "https://kodawave-application-site.vercel.app/" },
+  { path: "/cpc-pagina.png", link: "https://website-cpc-5hf.pages.dev/" },
+  { path: "/voltin-page.png", link: "https://voltind-page.vercel.app/" },
+  { path: "/thumb2.jpg", link: "https://omnifood-tadeosoto.netlify.app/" },
+  { path: "/pagina-paco.png", link: "https://pagina-paco.vercel.app/" },
+];
 
-// ... (resto del código sigue siendo igual)
+function chunkPages(items, size) {
+  const pages = [];
+  for (let i = 0; i < items.length; i += size) {
+    pages.push(items.slice(i, i + size));
+  }
+  return pages;
+}
+
+const THUMB_SIZES =
+  "(max-width: 640px) 50vw, (max-width: 1024px) 34vw, (max-width: 1536px) 24vw, 420px";
 
 const WorkSlider = () => {
+  const { t: tc } = useTranslation("common");
+  const { t: tp } = useTranslation("projects");
+
+  const projectPages = useMemo(() => {
+    const titles = tp("titles", { returnObjects: true });
+    if (!Array.isArray(titles) || titles.length !== PROJECT_ASSETS.length) {
+      return chunkPages(
+        PROJECT_ASSETS.map((a, i) => ({
+          ...a,
+          title: `Project ${i + 1}`,
+        })),
+        4
+      );
+    }
+    const merged = PROJECT_ASSETS.map((a, i) => ({
+      ...a,
+      title: titles[i],
+    }));
+    return chunkPages(merged, 4);
+  }, [tp]);
+
   return (
     <Swiper
-      spaceBetween={10}
-      pagination={{
-        clickable: true,
-      }}
-      modules={[Pagination]}
-      className="h-[280px] sm:h-[600px]"
+      className="work-slider-swiper w-full max-w-full overflow-hidden py-1"
+      modules={[Pagination, Autoplay]}
+      slidesPerView={1}
+      spaceBetween={0}
+      autoHeight
+      watchOverflow
+      resistanceRatio={0}
+      rewind={projectPages.length > 1}
+      autoplay={
+        projectPages.length > 1
+          ? {
+              delay: 5000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }
+          : false
+      }
+      pagination={{ clickable: true }}
     >
-      {workSlides.slides.map((slide, slideIndex) => {
-        return (
-          <SwiperSlide key={`slide-${slideIndex}`}>
-            <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
-              {slide.images.map((image, imageIndex) => {
-                return (
-                  <div
-                    className="relative rounded-lg overflow-hidden flex items-center justify-center group"
-                    key={`image-${slideIndex}-${imageIndex}`}
-                  >
-                    <a
-                      href={image.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <div
-                        className="flex items-center justify-center relative overflow-hidden group"
-                        // key={index}
-                      >
-                        {/* image */}
-                        <Image
-                          src={image.path}
-                          width={500}
-                          height={300}
-                          alt=""
-                        />
-                        {/* gradient overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#2563eb] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
-                        {/*  title*/}
-                        <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
-                          <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
-                            <div className="delay-100">VER</div>
-                            <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
-                              PROYECTO
-                            </div>
-                            <div className="text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200">
-                              <BsArrowRight />
-                            </div>
-                          </div>
-                        </div>
+      {projectPages.map((images, pageIndex) => (
+        <SwiperSlide
+          key={`page-${pageIndex}`}
+          className="!box-border !h-auto !w-full shrink-0"
+        >
+          <div className="grid w-full max-w-full grid-cols-2 grid-rows-2 gap-3 sm:gap-4">
+            {images.map((image, imageIndex) => (
+              <div
+                className="relative aspect-[16/10] w-full min-w-0 overflow-hidden rounded-lg group"
+                key={`${image.path}-${pageIndex}-${imageIndex}`}
+              >
+                <a
+                  href={image.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative block h-full w-full cursor-pointer"
+                >
+                  <span className="sr-only">
+                    {tc("workSlider.openProject", { title: image.title })}
+                  </span>
+                  <Image
+                    src={image.path}
+                    alt={image.title}
+                    fill
+                    sizes={THUMB_SIZES}
+                    quality={92}
+                    className="object-cover object-top"
+                  />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-l from-transparent via-[#2563eb] to-[#4a22bd] opacity-0 transition-opacity duration-700 group-hover:opacity-80" />
+                  <div className="pointer-events-none absolute bottom-0 translate-y-full transition-transform duration-300 group-hover:-translate-y-10 group-hover:xl:-translate-y-20">
+                    <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
+                      <div className="delay-100">{tc("workSlider.see")}</div>
+                      <div className="translate-y-[500%] transition-transform delay-150 group-hover:translate-y-0">
+                        {tc("workSlider.project")}
                       </div>
-                    </a>
+                      <div className="translate-y-[500%] text-xl transition-transform delay-200 group-hover:translate-y-0">
+                        <BsArrowRight />
+                      </div>
+                    </div>
                   </div>
-                );
-              })}
-            </div>
-          </SwiperSlide>
-        );
-      })}
+                </a>
+              </div>
+            ))}
+          </div>
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };

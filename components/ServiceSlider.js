@@ -1,102 +1,121 @@
-// icons
 import {
   RxCrop,
   RxPencil2,
   RxDesktop,
   RxReader,
-  RxRocket,
+  RxMagnifyingGlass,
+  RxUpdate,
   RxArrowTopRight,
 } from "react-icons/rx";
-
-// import swiper react components
+import { MdSpeed } from "react-icons/md";
+import {
+  HiOutlineServerStack,
+  HiOutlineShoppingBag,
+} from "react-icons/hi2";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-
-//swiper stykes
-
 import "swiper/css";
-import "swiper/css/free-mode";
 import "swiper/css/pagination";
+import { Autoplay, Pagination } from "swiper";
+import { useTranslation } from "next-i18next";
+import { useMemo } from "react";
 
-//modulos requeriros
+function chunkServices(items, size) {
+  const pages = [];
+  for (let i = 0; i < items.length; i += size) {
+    pages.push(items.slice(i, i + size));
+  }
+  return pages;
+}
 
-import { FreeMode, Pagination } from "swiper";
-
-// data
-const serviceData = [
-  {
-    icon: <RxCrop />,
-    title: "Gestion de marca",
-    description:
-      "Optimizando y fortaleciendo la identidad y percepción de tu marca.",
-  },
-  {
-    icon: <RxPencil2 />,
-    title: "Diseño",
-    description:
-      "sitios web impactantes y funcionales para tus necesidades digitales.",
-  },
-  {
-    icon: <RxDesktop />,
-    title: "Desarrollo",
-    description:
-      "Desarrollando soluciones web personalizadas y eficientes para tu negocio.",
-  },
-
-  {
-    icon: <RxRocket />,
-    title: "SEO",
-    description:
-      "Mejorando la visibilidad y el posicionamiento orgánico de tu sitio web.",
-  },
+const SERVICE_ICONS = [
+  RxCrop,
+  RxPencil2,
+  RxDesktop,
+  MdSpeed,
+  HiOutlineServerStack,
+  RxMagnifyingGlass,
+  RxReader,
+  HiOutlineShoppingBag,
+  RxUpdate,
 ];
 
 const ServiceSlider = () => {
+  const { t } = useTranslation("services");
+
+  const services = useMemo(() => {
+    const items = t("items", { returnObjects: true });
+    if (!Array.isArray(items)) return [];
+    return items.map((item, i) => ({
+      ...item,
+      Icon: SERVICE_ICONS[i],
+    }));
+  }, [t]);
+
+  const pages = useMemo(
+    () => chunkServices(services, 3),
+    [services]
+  );
+
   return (
     <Swiper
-      breakpoints={{
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 15,
-        },
-
-        640: {
-          slidesPerView: 3,
-          spaceBetween: 15,
-        },
-      }}
-      freeMode={true}
-      pagination={{
-        clickable: true,
-      }}
-      modules={[FreeMode, Pagination]}
-      className="h-[240px] sm:h-[340px]"
+      className="service-slider-swiper w-full max-w-full overflow-hidden py-1"
+      modules={[Pagination, Autoplay]}
+      slidesPerView={1}
+      spaceBetween={0}
+      autoHeight
+      watchOverflow
+      resistanceRatio={0}
+      rewind={pages.length > 1}
+      autoplay={
+        pages.length > 1
+          ? {
+              delay: 5000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }
+          : false
+      }
+      pagination={{ clickable: true }}
     >
-      {serviceData.map((item, index) => {
-        return (
-          <SwiperSlide key={index}>
-            <div className="bg-[#412f7b26] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[#5941a926] transition-all duration-300">
-              {/* icono */}
-              <div className="text-4xl text-accent mb-4">{item.icon}</div>
-              {/* titulo y desc */}
-              <div className="mb-8">
-                <div className="mb-2 text-lg">{item.title}</div>
-                <p className="max-w-[350px] leading-normal">
-                  {item.description}
-                </p>
-              </div>
-              {/* flechita */}
-              <div className="text-3xl">
-                <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300" />
-              </div>
-            </div>
-          </SwiperSlide>
-        );
-      })}
+      {pages.map((page, pageIndex) => (
+        <SwiperSlide
+          key={`service-page-${pageIndex}`}
+          className="!box-border !h-auto !w-full shrink-0"
+        >
+          <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {page.map((item, i) => {
+              const Icon = item.Icon;
+              return (
+                <div
+                  key={`${item.title}-${pageIndex}-${i}`}
+                  className="group bg-[#412f7b26] flex h-full min-h-[220px] flex-col rounded-lg px-5 py-7 transition-colors duration-300 hover:bg-[#5941a926]"
+                >
+                  <div className="mb-4 text-4xl text-accent">
+                    <Icon aria-hidden />
+                  </div>
+                  <div className="mb-6 flex-1">
+                    <h3 className="mb-2 text-lg font-medium text-white">
+                      {item.title}
+                    </h3>
+                    <p className="max-w-[350px] text-sm leading-relaxed text-white/70">
+                      {item.description}
+                    </p>
+                  </div>
+                  <div className="text-3xl text-white/80">
+                    <RxArrowTopRight
+                      className="transition-transform duration-300 group-hover:rotate-45 group-hover:text-accent"
+                      aria-hidden
+                    />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };
 
 export default ServiceSlider;
-
-// segundo 1:59:03 del VIDEO

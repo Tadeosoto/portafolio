@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "title": "Brand & identity",
+      "description": "Visual and messaging coherence aligned with your business and audience."
+    },
+    {
+      "title": "UI/UX design",
+      "description": "Clear, accessible interfaces focused on conversion and usability."
+    },
+    {
+      "title": "Web development",
+      "description": "Sites and apps with React, Next.js, and TypeScript production-ready."
+    },
+    {
+      "title": "Web performance",
+      "description": "Core Web Vitals, Lighthouse, load time and stability optimization."
+    },
+    {
+      "title": "APIs & integrations",
+      "description": "REST, dynamic data, and connections to backends, CMS, and third-party services."
+    },
+    {
+      "title": "Technical SEO",
+      "description": "Indexing, metadata, structure, and improvements for organic visibility."
+    },
+    {
+      "title": "CMS & content",
+      "description": "Templates, migrations, and publishing flows on CMS platforms."
+    },
+    {
+      "title": "E-commerce & catalogs",
+      "description": "Filters, promotions, and business rules for complex inventories."
+    },
+    {
+      "title": "Support & evolution",
+      "description": "Refactors, new features, deployments, and continuous product improvement."
+    }
+  ]
+}

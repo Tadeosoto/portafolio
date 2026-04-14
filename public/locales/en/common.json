@@ -1,0 +1,59 @@
+{
+  "header": {
+    "logoAlt": "Tadeo Soto — home"
+  },
+  "avatarAlt": "Developer portrait",
+  "locale": {
+    "switchLanguage": "Language",
+    "en": "EN-US",
+    "es": "ES-MX"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "home": {
+    "title1": "Web design",
+    "title2": "that makes",
+    "titleAccent": "click.",
+    "subtitle": "On every project we blend intuitive design with solid functionality—web solutions that capture attention and drive results. Trust us to take your idea to the next digital level.",
+    "projectsBtnAria": "View my projects"
+  },
+  "servicesPage": {
+    "title": "My services",
+    "subtitle": "End-to-end solutions to grow your online presence and your brand’s visibility."
+  },
+  "projectsPage": {
+    "title": "My projects",
+    "subtitle": "Websites I’ve built and optimized with tailored solutions that strengthen your digital presence."
+  },
+  "workSlider": {
+    "see": "VIEW",
+    "project": "PROJECT",
+    "openProject": "Open project: {{title}}"
+  },
+  "contact": {
+    "title": "Let’s work",
+    "titleAccent": "together!",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Let’s talk"
+  },
+  "about": {
+    "tabs": {
+      "skills": "Skills",
+      "credentials": "Credentials"
+    },
+    "hero": {
+      "line1": "Using diverse",
+      "accent1": " tools",
+      "line2": " for your ",
+      "accent2": "digital",
+      "line3": " ideas."
+    }
+  }
+}

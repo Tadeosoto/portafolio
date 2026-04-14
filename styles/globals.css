@@ -53,3 +53,40 @@
 .miguelito {
   mask-image: linear-gradient(black 70%, transparent);
 }
+
+/* Carrusel de proyectos: una slide = 100% ancho, sin “peek” de la vecina */
+.work-slider-swiper.swiper {
+  overflow: hidden;
+  /* Hueco bajo el grid para que los bullets no queden encima de las miniaturas */
+  padding-bottom: 2.75rem;
+}
+.work-slider-swiper .swiper-slide {
+  width: 100% !important;
+  max-width: 100%;
+}
+.work-slider-swiper .swiper-pagination {
+  bottom: 0.5rem !important;
+  top: auto !important;
+  line-height: 1;
+}
+.work-slider-swiper .swiper-pagination-bullet {
+  vertical-align: middle;
+}
+
+/* Carrusel de servicios: misma paginación bajo las tarjetas */
+.service-slider-swiper.swiper {
+  overflow: hidden;
+  padding-bottom: 2.75rem;
+}
+.service-slider-swiper .swiper-slide {
+  width: 100% !important;
+  max-width: 100%;
+}
+.service-slider-swiper .swiper-pagination {
+  bottom: 0.5rem !important;
+  top: auto !important;
+  line-height: 1;
+}
+.service-slider-swiper .swiper-pagination-bullet {
+  vertical-align: middle;
+}

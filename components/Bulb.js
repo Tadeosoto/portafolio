@@ -10,6 +10,7 @@ const Bulb = () => {
         height={200}
         className="w-full h-full"
         alt=""
+        sizes="(max-width: 1280px) 160px, 260px"
       />
     </div>
   );

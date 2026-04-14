@@ -1,0 +1,86 @@
+{
+  "summary": "Frontend engineer with production experience delivering scalable web applications with React, Next.js (App Router), and TypeScript. Complex UIs, filtering, and business rules—with a focus on performance, SEO, and reliability. Expanding into full stack with Node.js, Python, and AI-assisted engineering.",
+  "skills": [
+    {
+      "category": "Frontend",
+      "detail": "React, Next.js (App Router), TypeScript, JavaScript (ES6+), Redux Toolkit, Context API, jQuery, HTML5, CSS3, Sass, Tailwind CSS, Framer Motion."
+    },
+    {
+      "category": "Backend",
+      "detail": "Node.js, Express.js, Python, REST APIs, SQL, NoSQL, MongoDB, backend utilities."
+    },
+    {
+      "category": "Web & architecture",
+      "detail": "DOM, HTTP protocol, responsive design, UI architecture."
+    },
+    {
+      "category": "CMS",
+      "detail": "InteractCP, DealerSpike."
+    },
+    {
+      "category": "Performance",
+      "detail": "Lighthouse optimization, SEO, debugging, refactoring."
+    },
+    {
+      "category": "DevOps",
+      "detail": "Git, GitHub, GitHub Actions, Vercel, Cloudflare."
+    },
+    {
+      "category": "AI & tools",
+      "detail": "ChatGPT, Cursor IDE, Mistral."
+    }
+  ],
+  "jobs": [
+    {
+      "company": "LeadVenture",
+      "role": "Frontend Developer I",
+      "period": "Mar 2024 – Present",
+      "bullets": [
+        "Contributed to 116 site builds, 159 content migrations, 28 quality updates, and 80 platform improvements.",
+        "Production UI with React, Next.js (App Router), jQuery, and Sass within CMS platforms.",
+        "Filtering architectures and promotion logic for complex product catalogs.",
+        "Improved Lighthouse and SEO through rendering optimization and component refactors.",
+        "Resolved 16 migration defects and complex UI/state issues—stronger release stability."
+      ]
+    },
+    {
+      "company": "CicadaLabs-mx",
+      "role": "Frontend Developer",
+      "period": "Aug 2023 – Mar 2024",
+      "bullets": [
+        "Scalable React components and filtering systems with Redux Toolkit.",
+        "REST API integration for dynamic product features.",
+        "SEO and maintainability by refactoring legacy UI."
+      ]
+    },
+    {
+      "company": "Freelance",
+      "role": "Frontend Developer",
+      "period": "Feb 2022 – Aug 2023",
+      "bullets": [
+        "20+ responsive sites with React, Next.js, Tailwind CSS, and Sass.",
+        "Projects from requirements to deployment on Vercel.",
+        "Traffic from ~30 to ~2,700 unique users via UI redesign and SEO."
+      ]
+    }
+  ],
+  "projectsBlock": {
+    "title": "Technical projects",
+    "items": [
+      "CPC Filtering System (Next.js, Redux Toolkit): scalable filtering architecture; +15% sales.",
+      "API Key Generator (Node.js, TypeScript): secure backend utility for API key generation and validation."
+    ]
+  },
+  "education": {
+    "title": "Computer Systems Engineering",
+    "place": "ITESO, Jesuit University of Guadalajara"
+  },
+  "training": {
+    "title": "Additional training",
+    "items": [
+      "Boot.dev — Python programming",
+      "Boot.dev — TypeScript",
+      "In progress: LLM / AI model development"
+    ]
+  }
+}

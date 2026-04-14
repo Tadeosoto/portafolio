@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "title": "Marca e identidad",
+      "description": "Coherencia visual y mensaje alineados con tu negocio y audiencia."
+    },
+    {
+      "title": "Diseño UI/UX",
+      "description": "Interfaces claras, accesibles y orientadas a conversión y usabilidad."
+    },
+    {
+      "title": "Desarrollo web",
+      "description": "Sitios y aplicaciones con React, Next.js y TypeScript listos para producción."
+    },
+    {
+      "title": "Rendimiento web",
+      "description": "Core Web Vitals, Lighthouse y optimización de carga y estabilidad."
+    },
+    {
+      "title": "APIs e integraciones",
+      "description": "REST, datos dinámicos y conexión con backends, CMS y servicios externos."
+    },
+    {
+      "title": "SEO técnico",
+      "description": "Indexación, metadatos, estructura y mejoras para visibilidad orgánica."
+    },
+    {
+      "title": "CMS y contenidos",
+      "description": "Plantillas, migraciones y flujos de publicación en plataformas CMS."
+    },
+    {
+      "title": "E-commerce y catálogos",
+      "description": "Filtros, promociones y reglas de negocio para inventarios complejos."
+    },
+    {
+      "title": "Soporte y evolución",
+      "description": "Refactors, nuevas funciones, despliegues y mejora continua del producto."
+    }
+  ]
+}
