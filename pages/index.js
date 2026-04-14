@@ -1,5 +1,10 @@
-import ParticleContainer from "../components/ParticlesContainer";
+import dynamic from "next/dynamic";
 import ProjectsBtn from "../components/ProjectsBtn";
+
+const ParticleContainer = dynamic(
+  () => import("../components/ParticlesContainer"),
+  { ssr: false }
+);
 import Avatar from "../components/Avatar";
 import ExplosionBg from "../components/ExplosionBg";
 

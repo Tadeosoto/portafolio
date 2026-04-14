@@ -49,6 +49,7 @@ const LanguageSwitcher = () => {
         }}
         aria-expanded={open}
         aria-haspopup="listbox"
+        aria-controls="language-switcher-menu"
         aria-label={t("locale.switchLanguage")}
       >
         <span className="text-lg leading-none" aria-hidden>
@@ -61,8 +62,10 @@ const LanguageSwitcher = () => {
       </button>
       {open && (
         <ul
+          id="language-switcher-menu"
           className="absolute right-0 mt-1 min-w-[10rem] rounded-md border border-white/15 bg-primary/95 py-1 shadow-lg backdrop-blur-md"
           role="listbox"
+          aria-label={t("locale.switchLanguage")}
         >
           {LOCALES.map((l) => (
             <li key={l.code} role="option" aria-selected={l.code === locale}>

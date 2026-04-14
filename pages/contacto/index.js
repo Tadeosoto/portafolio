@@ -47,24 +47,45 @@ const Contact = () => {
             className="flex-1 flex flex-col gap-6 w-full mx-auto"
           >
             <div className="flex gap-x-6 w-full flex-col sm:flex-row">
-              <input
-                type="text"
-                placeholder={t("contact.name")}
-                className="input"
-                name="user_name"
-              />
-              <input
-                type="email"
-                placeholder={t("contact.email")}
-                className="input"
-                name="user_email"
+              <div className="w-full flex flex-col gap-2 text-left">
+                <label htmlFor="contact-name" className="sr-only">
+                  {t("contact.nameLabel")}
+                </label>
+                <input
+                  id="contact-name"
+                  type="text"
+                  placeholder={t("contact.name")}
+                  className="input"
+                  name="user_name"
+                  autoComplete="name"
+                />
+              </div>
+              <div className="w-full flex flex-col gap-2 text-left">
+                <label htmlFor="contact-email" className="sr-only">
+                  {t("contact.emailLabel")}
+                </label>
+                <input
+                  id="contact-email"
+                  type="email"
+                  placeholder={t("contact.email")}
+                  className="input"
+                  name="user_email"
+                  autoComplete="email"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col gap-2 text-left w-full">
+              <label htmlFor="contact-message" className="sr-only">
+                {t("contact.messageLabel")}
+              </label>
+              <textarea
+                id="contact-message"
+                name="message"
+                placeholder={t("contact.message")}
+                className="textarea"
+                autoComplete="off"
               />
             </div>
-            <textarea
-              name="message"
-              placeholder={t("contact.message")}
-              className="textarea"
-            />
             <button
               type="submit"
               value="send"

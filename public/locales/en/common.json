@@ -1,4 +1,34 @@
 {
+  "seo": {
+    "siteName": "Tadeo Soto — Web design & development",
+    "skipToContent": "Skip to main content",
+    "pages": {
+      "home": {
+        "title": "Web design that makes click",
+        "description": "Portfolio of Tadeo Soto — intuitive web design and solid functionality for brands that want to stand out online."
+      },
+      "about": {
+        "title": "About",
+        "description": "Skills, credentials, and background — how I build digital experiences with modern tools."
+      },
+      "services": {
+        "title": "Services",
+        "description": "End-to-end web services: design, development, optimization, and a stronger online presence for your brand."
+      },
+      "work": {
+        "title": "Projects",
+        "description": "Selected websites and projects — tailored solutions that strengthen your digital presence."
+      },
+      "contact": {
+        "title": "Contact",
+        "description": "Get in touch to discuss your next web project — collaboration, timelines, and ideas."
+      },
+      "testimonials": {
+        "title": "Testimonials",
+        "description": "What clients say about working together on web and digital projects."
+      }
+    }
+  },
   "header": {
     "logoAlt": "Tadeo Soto — home"
   },
@@ -9,11 +39,17 @@
     "es": "ES-MX"
   },
   "nav": {
+    "landmark": "Primary navigation",
     "home": "Home",
     "about": "About",
     "services": "Services",
     "work": "Work",
     "contact": "Contact"
+  },
+  "social": {
+    "github": "GitHub profile (opens in a new tab)",
+    "linkedin": "LinkedIn profile (opens in a new tab)",
+    "whatsapp": "Contact on WhatsApp (opens in a new tab)"
   },
   "home": {
     "title1": "Web design",
@@ -41,7 +77,10 @@
     "name": "Name",
     "email": "Email",
     "message": "Message",
-    "submit": "Let’s talk"
+    "submit": "Let’s talk",
+    "nameLabel": "Your name",
+    "emailLabel": "Your email",
+    "messageLabel": "Your message"
   },
   "about": {
     "tabs": {

@@ -1,4 +1,34 @@
 {
+  "seo": {
+    "siteName": "Tadeo Soto — Diseño y desarrollo web",
+    "skipToContent": "Saltar al contenido principal",
+    "pages": {
+      "home": {
+        "title": "Diseño web que hace click",
+        "description": "Portafolio de Tadeo Soto — diseño web intuitivo y funcionalidad sólida para marcas que quieren destacar en línea."
+      },
+      "about": {
+        "title": "Acerca de mí",
+        "description": "Habilidades, credenciales y trayectoria — cómo construyo experiencias digitales con herramientas actuales."
+      },
+      "services": {
+        "title": "Servicios",
+        "description": "Servicios web integrales: diseño, desarrollo, optimización y mayor presencia en línea para tu marca."
+      },
+      "work": {
+        "title": "Proyectos",
+        "description": "Sitios y proyectos seleccionados — soluciones a medida que fortalecen tu presencia digital."
+      },
+      "contact": {
+        "title": "Contacto",
+        "description": "Escríbeme para tu próximo proyecto web — colaboración, tiempos e ideas."
+      },
+      "testimonials": {
+        "title": "Testimonios",
+        "description": "Lo que dicen quienes han trabajado conmigo en proyectos web y digitales."
+      }
+    }
+  },
   "header": {
     "logoAlt": "Tadeo Soto — inicio"
   },
@@ -9,11 +39,17 @@
     "es": "ES-MX"
   },
   "nav": {
+    "landmark": "Navegación principal",
     "home": "Inicio",
     "about": "Acerca",
     "services": "Servicios",
     "work": "Trabajos",
     "contact": "Contacto"
+  },
+  "social": {
+    "github": "Perfil de GitHub (se abre en una pestaña nueva)",
+    "linkedin": "Perfil de LinkedIn (se abre en una pestaña nueva)",
+    "whatsapp": "Contactar por WhatsApp (se abre en una pestaña nueva)"
   },
   "home": {
     "title1": "Diseño web",
@@ -41,7 +77,10 @@
     "name": "nombre",
     "email": "correo",
     "message": "mensaje",
-    "submit": "Hablemos"
+    "submit": "Hablemos",
+    "nameLabel": "Tu nombre",
+    "emailLabel": "Tu correo",
+    "messageLabel": "Tu mensaje"
   },
   "about": {
     "tabs": {

@@ -19,6 +19,8 @@ const Header = () => {
               height={70}
               alt={t("header.logoAlt")}
               sizes="(max-width: 768px) 140px, 189px"
+              priority
+              fetchPriority="high"
             />
           </Link>
           <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 lg:gap-x-6">

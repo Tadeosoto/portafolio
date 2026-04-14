@@ -12,17 +12,27 @@ const sora = Sora({
 import Nav from "../components/Nav";
 import Header from "../components/Header";
 import TopLeftImg from "../components/TopLeftImg";
+import Seo from "../components/Seo";
+import SkipToContent from "../components/SkipToContent";
 
 const Layout = ({ children }) => {
   return (
     <div
       className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}
     >
+      <Seo />
+      <SkipToContent />
       <TopLeftImg />
       <Nav />
       <Header />
       {/* Espacio a la derecha en desktop para que el nav fijo no tape el contenido */}
-      <div className="h-full min-h-0 xl:pr-24 2xl:pr-32">{children}</div>
+      <main
+        id="main-content"
+        tabIndex={-1}
+        className="h-full min-h-0 outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-primary xl:pr-24 2xl:pr-32"
+      >
+        {children}
+      </main>
     </div>
   );
 };
