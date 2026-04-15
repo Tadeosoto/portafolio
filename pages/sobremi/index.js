@@ -184,7 +184,9 @@ const About = () => {
                           — {block.role}
                         </span>
                       </div>
-                      <div className="text-accent text-sm mb-2">{block.period}</div>
+                      <div className="text-accent text-sm mb-2">
+                        {block.period}
+                      </div>
                       <ul className="list-disc list-outside ml-4 space-y-1.5 text-white/60 text-sm leading-relaxed">
                         {block.bullets.map((b, bi) => (
                           <li key={`${block.company}-b-${bi}`}>{b}</li>
@@ -213,7 +215,9 @@ const About = () => {
                       <div className="text-white font-medium">
                         {education.title}
                       </div>
-                      <div className="text-white/60 text-sm">{education.place}</div>
+                      <div className="text-white/60 text-sm">
+                        {education.place}
+                      </div>
                     </div>
                   </div>
                 )}

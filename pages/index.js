@@ -3,7 +3,7 @@ import ProjectsBtn from "../components/ProjectsBtn";
 
 const ParticleContainer = dynamic(
   () => import("../components/ParticlesContainer"),
-  { ssr: false }
+  { ssr: false },
 );
 import Avatar from "../components/Avatar";
 import ExplosionBg from "../components/ExplosionBg";

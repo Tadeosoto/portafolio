@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
       <main
         id="main-content"
         tabIndex={-1}
-        className="h-full min-h-0 outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-primary xl:pr-24 2xl:pr-32"
+        className="h-full min-h-0 outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-primary max-lg:pb-28 max-lg:h-auto xl:pr-24 2xl:pr-32"
       >
         {children}
       </main>
